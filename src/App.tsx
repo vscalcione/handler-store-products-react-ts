@@ -41,10 +41,12 @@ function App() {
   const TitlePage = () => {
     return (
       <Grid item xs={12}>
-        <Typography variant="h5" component="h5">
-          React application with Redux and Typescript, developed by Scalcione
-          Vincenzo
-        </Typography>
+        <div className="container">
+          <Typography variant="h5" component="h5">
+            React application with Redux and Typescript, developed by Scalcione
+            Vincenzo
+          </Typography>
+        </div>
       </Grid>
     );
   };
