@@ -5,7 +5,7 @@ import { takeLatest } from "redux-saga/effects";
 
 import { reducerProductsList } from "./reducerProductsList";
 import { getProductsList } from "./saga";
-import { FETCH_PRODUCTS_LIST_REQUEST } from "./actions";
+import { Actions } from "./actions";
 
 const middlewareSaga = createSagaMiddleware();
 
@@ -19,7 +19,7 @@ const rootReducer = combineReducers({
 });
 
 function* rootSaga() {
-  yield takeLatest(FETCH_PRODUCTS_LIST_REQUEST, getProductsList);
+  yield takeLatest(Actions.FETCH_PRODUCTS_LIST_REQUEST, getProductsList);
 }
 
 export const configureStore = () => {
