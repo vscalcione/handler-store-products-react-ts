@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 
 import Card from "@material-ui/core/Card";
@@ -26,7 +26,7 @@ export const GridProductsComponent = (props: any) => {
       <Grid item xs={4}>
         <Typography variant="body2" gutterBottom>
           {" "}
-          DATA NOT AVAILABLE{" "}
+          Data not available{" "}
         </Typography>
       </Grid>
     );
@@ -42,7 +42,7 @@ export const GridProductsComponent = (props: any) => {
             deleteItem(product);
           }}
         >
-          DELETE ITEM
+          Delete Item
         </Button>
       </CardActions>
     );
@@ -74,6 +74,7 @@ export const GridProductsComponent = (props: any) => {
               </Grid>
             );
           }
+          return null;
         })
       ) : (
         <NoData />

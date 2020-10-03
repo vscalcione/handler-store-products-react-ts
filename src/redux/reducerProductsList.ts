@@ -22,6 +22,7 @@ export const reducerProductsList = (prevState: any = {}, action: any) => {
         if (product.id === action.payload.id) {
           clonedState.products.splice(index, 1);
         }
+        return null;
       });
       break;
 

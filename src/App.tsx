@@ -42,7 +42,8 @@ function App() {
     return (
       <Grid item xs={12}>
         <Typography variant="h5" component="h5">
-          REACT example application with REDUX created by Marco Pestrin
+          React application with Redux and Typescript, developed by Scalcione
+          Vincenzo
         </Typography>
       </Grid>
     );
