@@ -11,7 +11,7 @@ import Grid from "@material-ui/core/Grid";
 import { Actions } from "../../redux/actions";
 import { DATA_KEY } from "../../config";
 
-export const GridProductsComponent: FC = (props): JSX.Element => {
+export const GridProductsComponent = (props: any) => {
   const dispatch = useDispatch();
   const { firstItem, lastItem, products } = props;
 

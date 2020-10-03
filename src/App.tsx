@@ -27,6 +27,7 @@ function App() {
 
   const lastPage = (products?.length - 1) / offset; // da arrotondare per difetto!!!
   const firstItem = pagination * offset;
+  console.log("first item: ", firstItem);
   const lastItem = pagination * offset + offset;
 
   const onChange = (event: any) => setTableVisible(event);

@@ -9,7 +9,7 @@ import { Actions } from "./actions";
 
 const middlewareSaga = createSagaMiddleware();
 
-const initialState = {
+const initialState: Object = {
   loading: true,
   products: [],
 };

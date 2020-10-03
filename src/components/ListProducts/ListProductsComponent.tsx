@@ -14,8 +14,11 @@ import { DATA_KEY } from "../../config";
 
 import DeleteIcon from "@material-ui/icons/Delete";
 
-export const ListProductsComponent: FC = (props: any): JSX.Element => {
+export const ListProductsComponent = (props: any) => {
   const dispatch = useDispatch();
+
+  //const firstItem: number = props.firstItem;
+  //const lastItem: number = props.lastItem;
   const { firstItem, lastItem, products } = props;
 
   function deleteItem(payload: any) {
